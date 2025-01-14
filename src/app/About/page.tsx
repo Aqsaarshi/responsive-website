@@ -18,37 +18,36 @@ import { IoLogoInstagram } from "react-icons/io";
 
 const page = () => {
   return (
-    <div>
+    <div className="sm:overflow-x:hidden">
       <Header />
       {/* Header Section */}
-      <div className="w-full sm:w-[1920px] h-[84px] px-6 sm:px-[300px] py-[20px] flex justify-center sm:gap-[850px] gap-[20px] bg-[#F0F2F3]">
+      <div className="w-full  h-[84px] px-6 sm:px-[16px] py-[20px] flex justify-center sm:gap-[700px] gap-[20px] bg-[#F0F2F3]">
         <Image
           src={Logo}
           height={40}
           width={166}
           alt="Logo"
-          className="sm:ml-[80px] ml-[20px]"
+          className=" ml-[20px]"
         />
-        <a
+        <Link
           href="/Cart"
           className="flex items-center sm:ml-[220px] sm:mr-[100px] w-[120px] h-[44px] px-[18px] py-[11px] gap-[12px] rounded-tl-[8px] bg-white relative z-10 ml-[10px] mr-[10px]"
         >
           <PiShoppingCartBold className="h-[44px] w-[44px]" />
           <p>Cart</p>
           <Image src={No} alt="No Items" height={30} width={30} />
-        </a>
+        </Link>
       </div>
-
       {/* Navigation Links */}
-      <div className="w-full sm:w-[1920px] h-[74px] px-6 sm:px-[300px] py-[14px] flex justify-around items-center">
+      <div className="w-full  h-[74px] px-6 sm:px-[120px] py-[14px] flex justify-between items-center ">
         {/* Navigation Links */}
-        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base gap-0">
-          <Link
-            href="/#"
+        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base ">
+          <a
+            href="/"
             className="mr-5 hover:text-slate-400 font-Inter text-[#007580]"
           >
             Home
-          </Link>
+          </a>
           <Link
             href="/Cart"
             className="mr-5 hover:text-slate-400 font-Inter text-[#636270]"
@@ -75,15 +74,12 @@ const page = () => {
           </Link>
         </nav>
         {/* Contact Info */}
-        <Link
-          href="/Contact"
-          className="text-black ml-auto hover:text-slate-400"
-        >
+        <a href="/Contact" className="text-black ml-auto hover:text-slate-400">
           Contact: (808) 555-0111
-        </Link>
+        </a>
       </div>
-      <div className="border-t border-gray-300 w-[1920px]"></div>
-      <div className="w-full sm:w-[672px] h-auto sm:h-[478px] bg-[#007580] absolute top-[303px] left-[300px] sm:p-[64px_113px_54px_64px] p-6 gap-0 sm:gap-0 -ml-72  sm:ml-0">
+      <div className="border-t border-gray-300  w-full"></div>
+      <div className="w-full sm:w-[672px] h-auto sm:h-[478px] bg-[#007580] absolute top-[303px] left-[300px] sm:p-[64px_113px_54px_64px] p-6 gap-0 sm:gap-0 -ml-80  sm:-ml-48">
         <p className="text-white text-2xl sm:text-3xl font-sans font-bold text-center sm:text-left">
           About Us - Comforty
         </p>
@@ -108,10 +104,10 @@ const page = () => {
       </div>
 
       {/**section */}
-      <div className="sm:ml-[800px] ml-4 font-sans font-bold text-4xl sm:mt-[700px] mt-[600px]">
+      <div className="sm:ml-[520px] ml-4 font-sans font-bold text-4xl sm:mt-[700px] mt-[600px]">
         What makes our Brand Different
       </div>
-      <div className="absolute w-[1320px] h-[244px] top-[996px] left-[300px] sm:flex gap-10 -ml-72 sm:ml-0">
+      <div className="absolute w-[1320px] h-[244px] top-[996px] left-[300px] sm:flex gap-10 -ml-[300px] sm:-ml-[180px]">
         <div className="w-[309.45px] h-[244px] flex-shrink-0 p-[48px_0px_0px_0px] bg-[#F9F9F9] px-4 ">
           <Image src={Frame1} alt="" height={148} width={213.45} />
         </div>
@@ -127,10 +123,10 @@ const page = () => {
       </div>
       {/**product  */}
       <div className="w-full sm:w-[1200px] lg:w-[1920px] h-auto sm:h-[461px] absolute top-[200px] gap-0 mt-[1800px] sm:mt-[1000px] md:mt-[1100px]">
-        <div className="w-full h-[44px] px-[16px] sm:px-[300px] flex justify-start items-start text-[24px] sm:text-[32px] font-sans font-semibold whitespace-nowrap">
+        <div className="w-full h-[44px] px-[16px] sm:px-[300px] flex justify-start items-start text-[24px] sm:text-[32px] font-sans font-semibold whitespace-nowrap sm:-ml-40">
           Our Popular Products
           <div className="flex gap-0 sm:gap-4  mt-20 sm:mt-20 -ml-[100px] sm:-ml-[160px]">
-            <div className="w-full sm:w-[630px] h-auto sm:h-[375px] -ml-40">
+            <div className="w-[100px]  sm:w-[630px] h-auto sm:h-[375px] -ml-40">
               {/* Content for the first product */}
               <Image src={Large} alt="" height={375} width={630} />
               <div>
@@ -140,13 +136,13 @@ const page = () => {
               </div>
               <p className="text-xs text-black">$99.00</p>
             </div>
-            <div className="w-full sm:w-[330px] h-auto sm:h-[415px]">
+            <div className="w-[100px] sm:w-[330px] h-auto sm:h-[415px]">
               {/* Content for the second product */}
               <Image src={Photo} alt="" height={315} width={330} />
               <p className="block text-sm text-black mt-4">The Dandy chair</p>
               <p className="text-xs text-black">$99.00</p>
             </div>
-            <div className="w-full sm:w-[330px] h-auto sm:h-[415px]">
+            <div className="w-[100px] sm:w-[330px] h-auto sm:h-[415px]">
               <Image src={Parent} alt="" height={315} width={330} />
               <p className="block text-sm text-black mt-4">The Dandy chair</p>
               <p className="text-xs text-black">$99.00</p>
@@ -155,8 +151,8 @@ const page = () => {
         </div>
       </div>
 
-      <div className="border-t border-gray-300 w-[1920px] sm:mt-[1200px] mt-[1500px]"></div>
-      <footer className="w-[320px] sm:w-[1920px] sm:mt-[20px] mt-[00px] bg-gray-100 text-gray-600 shadow-lg  ">
+      <div className="border-t border-gray-300 w-full sm:w-[1920px] sm:mt-[1200px] mt-[1500px]"></div>
+      <footer className="w-[320px] sm:w-[1920px] sm:mt-[20px] mt-[00px] bg-gray-100 text-gray-600 shadow-lg sm:-ml-40  ">
         <div className="container mx-auto px-6 py-4">
           <div className="flex flex-wrap md:text-left text-center items-start">
             {/* Logo and Social Links */}
