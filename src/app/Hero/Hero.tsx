@@ -33,13 +33,13 @@ const Hero = () => {
   return (
     <div>
       {/* Top Header */}
-      <div className="w-full sm:w-[1920px] h-[84px] px-6 sm:px-[300px] py-[20px] flex justify-center sm:gap-[850px] gap-[20px] bg-[#F0F2F3]">
+      <div className="w-full  h-[84px] px-6 sm:px-[16px] py-[20px] flex justify-center sm:gap-[700px] gap-[20px] bg-[#F0F2F3]">
         <Image
           src={Logo}
           height={40}
           width={166}
           alt="Logo"
-          className="sm:ml-[80px] ml-[20px]"
+          className=" ml-[20px]"
         />
         <Link
           href="/Cart"
@@ -51,9 +51,9 @@ const Hero = () => {
         </Link>
       </div>
 
-      <div className="w-full sm:w-[1920px] h-[74px] px-6 sm:px-[300px] py-[14px] flex justify-around items-center">
+      <div className="w-full  h-[74px] px-6 sm:px-[120px] py-[14px] flex justify-between items-center ">
         {/* Navigation Links */}
-        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base gap-0">
+        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base ">
           <a
             href="#"
             className="mr-5 hover:text-slate-400 font-Inter text-[#007580]"
@@ -92,8 +92,8 @@ const Hero = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="w-full sm:w-[1370px] h-[850px] gap-0 rounded-b-[48px] bg-[#F0F2F3] mx-4 sm:mx-72">
-        <div className="w-[557px] h-[337px] absolute top-[400px] left-[20px] sm:left-[400px] gap-0 rounded-tl-[8px] mt-40">
+      <div className="w-full sm:w-[1370px] h-[850px] gap-0 rounded-b-[48px] bg-[#F0F2F3]  sm:mx-10">
+        <div className="w-[557px] h-[337px] absolute top-[400px] left-[20px] sm:left-[100px] gap-0 rounded-tl-[8px] mt-40">
           <p className="font-sans text-black">Welcome to chairy</p>
           <p className="sm:text-5xl text-3xl  font-sans font-bold mt-4">
             Best Furniture
@@ -102,20 +102,20 @@ const Hero = () => {
             Collection For Your Interior.
           </p>
           <Button
-            className="w-[171px] h-[52px] top-[514px] left-[70px] mt-9 bg-[#029FAE] hover:bg-cyan-500 text-white font-sans"
+            className="w-[171px] h-[52px] top-[514px] left-[70px] mt-9 bg-[#029FAE] text-white font-sans"
             variant="outline"
           >
             Shop Now
           </Button>
         </div>
         {/* Main Product Image */}
-        <div className="w-[200px] h-[584px] sm:w-[434px] sm:h-[584px] absolute top-[50px] sm:top-[115px] left-[100px] sm:left-[1200px] gap-0 mt-44">
+        <div className="w-[200px] h-[584px] sm:w-[434px] sm:h-[584px] absolute top-[50px] sm:top-[115px] left-[100px] sm:left-[900px] gap-0 mt-44">
           <Image src={product} alt="" height={584} width={434} />
         </div>
       </div>
 
       {/* this is companies logos */}
-      <div className="flex justify-between sm:w-[1300px] h-[139px] lg:w-[1321px] absolute top-[1107px] left-[20px] sm:left-[300px] flex-wrap gap-0 ">
+      <div className="flex justify-between sm:w-[1300px] h-[139px] lg:w-[1321px] absolute top-[1107px] left-[20px] sm:left-[80px] flex-wrap gap-0 ">
         <Image
           src={Logo1}
           alt=""
@@ -167,7 +167,7 @@ const Hero = () => {
         />
       </div>
       {/**this is features page  */}
-      <div className="w-[320px] sm:w-[1920px] mt-96 sm:mt-44 px-4 lg:px-[285px] py-8">
+      <div className="w-full sm:w-[1920px] mt-96 sm:mt-44 px-4 lg:px-[80px] py-8">
         {/* Section Title */}
         <div className="w-full h-auto sm:h-auto text-[24px] sm:text-[32px] font-sans font-semibold mb-8">
           <h1 className="text-[24px] sm:text-[32px] font-sans font-semibold mt-14">
@@ -252,13 +252,13 @@ const Hero = () => {
       </div>
 
       {/**This Top categories */}
-      <div className="w-[1920px] h-[495px] absolute top-[1270px] gap-0">
+      <div className="w-full h-[495px] absolute top-[1270px] gap-0">
         <div className="w-[320px] sm:w-[1920px] h-[508px] sm:h-[508px]  absolute top-[1900px] sm:top-[600px] text-white  ">
           {" "}
-          <h1 className="ml-10 text-[32px] font-sans font-semibold whitespace-nowrap text-black sm:ml-80">
+          <h1 className="ml-10 text-[32px] font-sans font-semibold whitespace-nowrap text-black sm:ml-40">
             Top categories
           </h1>
-          <div className="flex flex-col lg:flex-row gap-7 mt-9 lg:ml-80 items-center">
+          <div className="flex flex-col lg:flex-row gap-7 mt-9 lg:ml-20 items-center">
             <Image src={Category} alt="" height={424} width={424} />
             <Image src={C2} alt="" height={424} width={424} />
             <Image src={C3} alt="" height={424} width={424} />
@@ -268,8 +268,8 @@ const Hero = () => {
       {/*This is stylish chair */}
       {/* Stylish Chair Section */}
       {/* Stylish Chair Section */}
-      <div className="w-[320px] h-[1800px] sm:w-[1920px] sm:h-[648px]  absolute top-[4300px] sm:top-[2604px] px-4 lg:px-0">
-        <div className="w-full h-auto flex justify-center items-center">
+      <div className="w-[320px] h-[1800px] sm:w-[1920px] sm:h-[648px]  absolute top-[4300px] sm:top-[2604px] px-8 lg:px-20">
+        <div className="w-full h-auto ">
           <Image
             src={hotCategory}
             alt="Stylish Chair"
@@ -279,7 +279,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="w-[320px] h-[1200px] sm:w-[1320px] sm:h-[919px] absolute top-[4500px] sm:top-[3425px]  sm:left-[350px] left-[50px] gap-0 ">
+      <div className="w-[320px] h-[1200px] sm:w-[1320px] sm:h-[919px] absolute top-[4500px] sm:top-[3425px]  sm:left-[120px] left-[50px] gap-0 ">
         <div className="w-full h-[44px] -ml-10 flex justify-start items-start  text-[32px] font-sans font-semibold whitespace-nowrap">
           <div>
             {" "}
@@ -379,10 +379,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-300 w-[1920px] mt-5"></div>
         </div>
       </div>
-      <footer className="w-[320px] sm:w-[1920px] sm:mt-[2600px] mt-[3200px] bg-gray-100 text-gray-600 shadow-lg  ">
+      <footer className="w-[320px] sm:w-[1920px] sm:mt-[2600px] mt-[3200px] bg-gray-100 text-gray-600 shadow-lg sm:-ml-44">
         <div className="container mx-auto px-6 py-4">
           <div className="flex flex-wrap md:text-left text-center items-start">
             {/* Logo and Social Links */}
@@ -485,3 +484,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
