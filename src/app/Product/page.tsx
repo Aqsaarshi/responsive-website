@@ -20,74 +20,75 @@ import { Input } from "@/components/ui/input";
 import instagram from "../../app/image/instagram.png";
 import { FaFacebook, FaTwitter, FaPinterest, FaYoutube } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
+import Link from "next/link";
 
 const page = () => {
   return (
     <div>
       <Header />
-      <div className="w-full sm:w-[1920px] h-[84px] px-6 sm:px-[300px] py-[20px] flex justify-center sm:gap-[850px] gap-[20px] bg-[#F0F2F3]">
+      <div className="w-full  h-[84px] px-6 sm:px-[16px] py-[20px] flex justify-center sm:gap-[700px] gap-[20px] bg-[#F0F2F3]">
         <Image
           src={Logo}
           height={40}
           width={166}
           alt="Logo"
-          className="sm:ml-[80px] ml-[20px]"
+          className=" ml-[20px]"
         />
-        <a
+        <Link
           href="/Cart"
           className="flex items-center sm:ml-[220px] sm:mr-[100px] w-[120px] h-[44px] px-[18px] py-[11px] gap-[12px] rounded-tl-[8px] bg-white relative z-10 ml-[10px] mr-[10px]"
         >
           <PiShoppingCartBold className="h-[44px] w-[44px]" />
           <p>Cart</p>
           <Image src={No} alt="No Items" height={30} width={30} />
-        </a>
+        </Link>
       </div>
-      <div className="w-full sm:w-[1920px] h-[74px] px-6 sm:px-[300px] py-[14px] flex justify-around items-center">
+      <div className="w-full  h-[74px] px-6 sm:px-[120px] py-[14px] flex justify-between items-center ">
         {/* Navigation Links */}
-        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base gap-0">
+        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base ">
           <a
-            href="#"
+            href="/"
             className="mr-5 hover:text-slate-400 font-Inter text-[#007580]"
           >
             Home
           </a>
-          <a
+          <Link
             href="/Cart"
             className="mr-5 hover:text-slate-400 font-Inter text-[#636270]"
           >
             Shop
-          </a>
-          <a
+          </Link>
+          <Link
             href="/Product"
             className="mr-5 hover:text-slate-400 font-Inter text-[#636270]"
           >
             Product
-          </a>
-          <a
+          </Link>
+          <Link
             href="/Singlepg"
             className="mr-5 hover:text-slate-400 font-Inter text-[#636270]"
           >
             Pages
-          </a>
-          <a
+          </Link>
+          <Link
             href="/About"
             className="mr-5 hover:text-slate-400 font-Inter text-[#636270]"
           >
             About
-          </a>
+          </Link>
         </nav>
         {/* Contact Info */}
         <a href="/Contact" className="text-black ml-auto hover:text-slate-400">
           Contact: (808) 555-0111
         </a>
       </div>
-      <div className="border-t border-gray-300 w-[1920px]"></div>
+      <div className="border-t border-gray-300 w-full"></div>
 
       <div className="sm:w-[1920px] w-[320px] h-[461px] absolute top-[200px] gap-0">
-        <div className="sm:w-[1920px] w-[320px] h-[44px] px-[300px] flex justify-start items-start sm:flex-row flex-col sm:text-[32px] text-[25px] font-sans font-semibold whitespace-nowrap -ml-60 sm:ml-9">
+        <div className="sm:w-[1920px] w-[320px] h-[44px] px-[300px] flex justify-start items-start sm:flex-row flex-col sm:text-[32px] text-[25px] font-sans font-semibold whitespace-nowrap -ml-60  sm:-ml-2">
           Featured Products
         </div>
-        <div className="flex gap-4 mt-20 sm:mt-16 sm:flex-row flex-col sm:gap-8 justify-center">
+        <div className="flex gap-4 mt-20 sm:mt-16 sm:flex-row flex-col sm:gap-8 justify-center sm:-ml-[350px]">
           <div className="w-[330px] h-[415px] sm:w-[300px] sm:max-w-[300px]">
             {/* Content for the first product */}
             <Image src={Item1} alt="" height={312} width={330} />
@@ -135,11 +136,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="w-[1920px] h-[461px] absolute top-[700px] gap-0 hidden lg:block">
+      <div className="w-[1920px] h-[461px] absolute top-[700px] sm:gap-8 hidden lg:block sm:-ml-[180px]">
         <div className="w-full h-[44px] px-[570px] flex justify-start items-start text-[32px] font-sans font-semibold whitespace-nowrap">
           {/* Featured Products */}
-          <div className="flex gap-4 mt-20 -ml-[250px]">
-            <div className="w-[330px] h-[415px]">
+          <div className="flex gap-4 mt-20 -ml-[250px] sm:gap-8">
+            <div className="w-[330px] h-[415px] sm:w-[300px] sm:max-w-[300px]">
               <Image src={Item11} alt="" height={312} width={330} />
               <p className="block text-sm text-[#007580] mt-4">
                 Library Stool Chair
@@ -149,7 +150,7 @@ const page = () => {
                 <HiOutlineShoppingCart className="text-white" />
               </div>
             </div>
-            <div className="w-[330px] h-[415px]">
+            <div className="w-[330px] h-[415px] sm:w-[300px] sm:max-w-[300px]">
               <Image src={Item22} alt="" height={315} width={330} />
               <p className="block text-sm text-[#007580] mt-4">
                 Library Stool Chair
@@ -159,7 +160,7 @@ const page = () => {
                 <HiOutlineShoppingCart className="text-black" />
               </div>
             </div>
-            <div className="w-[330px] h-[415px]">
+            <div className="w-[330px] h-[415px] sm:w-[300px] sm:max-w-[300px]">
               <Image src={Item33} alt="" height={315} width={330} />
               <p className="block text-sm text-[#007580] mt-4">
                 Library Stool Chair
@@ -169,7 +170,7 @@ const page = () => {
                 <HiOutlineShoppingCart className="text-black" />
               </div>
             </div>
-            <div className="w-[330px] h-[415px]">
+            <div className="w-[330px] h-[415px] sm:w-[300px] sm:max-w-[300px]">
               <Image src={Item44} alt="" height={312} width={330} />
               <p className="block text-sm text-[#007580] mt-4">
                 Library Stool Chair
@@ -183,11 +184,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="w-[1920px] h-[461px] absolute top-[1200px] gap-0 hidden lg:block">
+      <div className="w-[1920px] h-[461px] absolute top-[1200px] gap-0 hidden lg:block sm:-ml-[180px]">
         <div className="w-full h-[44px] px-[570px] flex justify-start items-start text-[32px] font-sans font-semibold whitespace-nowrap">
           {/* Featured Products */}
-          <div className="flex gap-4 mt-20 -ml-[250px]">
-            <div className="w-[330px] h-[415px]">
+          <div className="flex gap-8 mt-20 -ml-[250px]">
+            <div className="w-[330px] h-[415px] sm:w-[300px] sm:max-w-[300px]">
               <Image src={Items1} alt="" height={312} width={330} />
               <p className="block text-sm text-[#007580] mt-4">
                 Library Stool Chair
@@ -197,7 +198,7 @@ const page = () => {
                 <HiOutlineShoppingCart className="text-white" />
               </div>
             </div>
-            <div className="w-[330px] h-[415px]">
+            <div className="w-[330px] h-[415px] sm:w-[300px] sm:max-w-[300px]">
               <Image src={Item2} alt="" height={315} width={330} />
               <p className="block text-sm text-[#007580] mt-4">
                 Library Stool Chair
@@ -207,7 +208,7 @@ const page = () => {
                 <HiOutlineShoppingCart className="text-black" />
               </div>
             </div>
-            <div className="w-[330px] h-[415px]">
+            <div className="w-[330px] h-[415px] sm:w-[300px] sm:max-w-[300px]">
               <Image src={Item3} alt="" height={315} width={330} />
               <p className="block text-sm text-[#007580] mt-4">
                 Library Stool Chair
@@ -217,7 +218,7 @@ const page = () => {
                 <HiOutlineShoppingCart className="text-black" />
               </div>
             </div>
-            <div className="w-[330px] h-[415px]">
+            <div className="w-[330px] h-[415px] sm:w-[300px] sm:max-w-[300px]">
               <Image src={Items4} alt="" height={312} width={330} />
               <p className="block text-sm text-[#007580] mt-4">
                 Library Stool Chair
@@ -241,7 +242,7 @@ const page = () => {
               className="sm:w-72 w-full"
             />
             <Button
-              className="bg-white text-black sm:ml-4 mt-4 sm:mt-0 sm:w-auto w-full"
+              className="bg-white text-black sm:ml-4 mt-4 sm:mt-0 sm:w-auto w-full hover:bg-cyan-700"
               type="submit"
             >
               Submit
@@ -259,7 +260,7 @@ const page = () => {
           </div>
         </div>
 
-        <footer className="w-[320px] sm:w-[1920px] sm:mt-[20px] mt-[200px] bg-gray-100 text-gray-600 shadow-lg -ml-5 ">
+        <footer className="w-[320px] sm:w-[1920px] sm:mt-[20px] mt-[200px] bg-gray-100 text-gray-600 shadow-lg -ml-10 sm:-ml-40 ">
           <div className="container mx-auto px-6 py-4">
             <div className="flex flex-wrap md:text-left text-center items-start">
               {/* Logo and Social Links */}
@@ -367,3 +368,4 @@ const page = () => {
 };
 
 export default page;
+
