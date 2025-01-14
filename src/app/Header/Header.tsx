@@ -14,9 +14,9 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div className=" sm:w-[320px] md:w-[720px] lg:w-[1920px] ">
-      <div className="flex justify-center items-center gap-[20px] sm:gap-[980px] px-4 sm:px-8 lg:px-16 bg-[#272343] h-[45px] ">
+      <div className="flex justify-center items-center gap-[20px] sm:gap-[880px] px-4 sm:px-[880px] lg:px-16 bg-[#272343] h-[45px] ">
         {/* Shipping Message */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 sm:-ml-[380px]">
           <Image src={check} alt="Check Icon" height={16} width={16} />
           <p className="font-sans text-[13px] leading-[14.3px] text-white">
             Free shipping on all orders over $50
