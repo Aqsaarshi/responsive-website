@@ -19,33 +19,33 @@ const page = () => {
   return (
     <div>
       <Header />
-      <div className="w-full sm:w-[1920px] h-[84px] px-6 sm:px-[300px] py-[20px] flex justify-center sm:gap-[850px] gap-[20px] bg-[#F0F2F3]">
+      <div className="w-full  h-[84px] px-6 sm:px-[16px] py-[20px] flex justify-center sm:gap-[700px] gap-[20px] bg-[#F0F2F3]">
         <Image
           src={Logo}
           height={40}
           width={166}
           alt="Logo"
-          className="sm:ml-[80px] ml-[20px]"
+          className=" ml-[20px]"
         />
-        <a
+        <Link
           href="/Cart"
           className="flex items-center sm:ml-[220px] sm:mr-[100px] w-[120px] h-[44px] px-[18px] py-[11px] gap-[12px] rounded-tl-[8px] bg-white relative z-10 ml-[10px] mr-[10px]"
         >
           <PiShoppingCartBold className="h-[44px] w-[44px]" />
           <p>Cart</p>
           <Image src={No} alt="No Items" height={30} width={30} />
-        </a>
+        </Link>
       </div>
 
-      <div className="w-full sm:w-[1920px] h-[74px] px-6 sm:px-[300px] py-[14px] flex justify-around items-center">
+      <div className="w-full  h-[74px] px-6 sm:px-[120px] py-[14px] flex justify-between items-center ">
         {/* Navigation Links */}
-        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base gap-0">
-          <Link
+        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base ">
+          <a
             href="/"
             className="mr-5 hover:text-slate-400 font-Inter text-[#007580]"
           >
             Home
-          </Link>
+          </a>
           <Link
             href="/Cart"
             className="mr-5 hover:text-slate-400 font-Inter text-[#636270]"
@@ -72,12 +72,9 @@ const page = () => {
           </Link>
         </nav>
         {/* Contact Info */}
-        <Link
-          href="/Contact"
-          className="text-black ml-auto hover:text-slate-400"
-        >
+        <a href="/Contact" className="text-black ml-auto hover:text-slate-400">
           Contact: (808) 555-0111
-        </Link>
+        </a>
       </div>
       <div className="border-t border-gray-300 w-full"></div>
       {/* Hero Section */}
@@ -116,7 +113,7 @@ const page = () => {
       </section>
 
       {/* Featured Products */}
-      <div className="w-[320px] sm:w-[1920px] flex flex-col items-center py-12 px-4">
+      <div className="w-[320px] sm:w-[1920px] flex flex-col items-center py-12 px-4 ml-[10px] sm:-ml-[180px]">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Featured Products
         </h2>
@@ -125,12 +122,12 @@ const page = () => {
           {[Item7, Item1, Items4, Item3, Items1].map((item, index) => (
             <div
               key={index}
-              className="w-[330px] h-auto flex flex-col items-center"
+              className="w-[270px] h-auto flex flex-col items-center"
             >
               <Image
                 src={item}
                 alt={`Item ${index + 1}`}
-                height={312}
+                height={270}
                 width={330}
               />
               <p className="text-sm text-black mt-4">Library Stool Chair</p>
@@ -143,7 +140,7 @@ const page = () => {
         </button>
       </div>
       <div className="border-t border-gray-300  mt-[20px]"></div>
-      <footer className="w-[320px] sm:w-[1920px] sm:mt-[105px] mt-[100px] bg-gray-100 text-gray-600 shadow-lg  ">
+      <footer className="w-[320px] sm:w-[1920px] sm:mt-[105px] mt-[100px] bg-gray-100 text-gray-600 shadow-lg sm:-ml-40 ">
         <div className="container mx-auto px-6 py-4">
           <div className="flex flex-wrap md:text-left text-center items-start">
             {/* Logo and Social Links */}
