@@ -6,61 +6,62 @@ import { PiShoppingCartBold } from "react-icons/pi";
 import No from "../../app/image/No.png";
 import { FaFacebook, FaTwitter, FaPinterest, FaYoutube } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
+import Link from "next/link";
 
 const page = () => {
   return (
     <div>
       <Header />
-      <div className="w-full sm:w-[1920px] h-[84px] px-6 sm:px-[300px] py-[20px] flex justify-center sm:gap-[850px] gap-[20px] bg-[#F0F2F3]">
+      <div className="w-full  h-[84px] px-6 sm:px-[16px] py-[20px] flex justify-center sm:gap-[700px] gap-[20px] bg-[#F0F2F3]">
         <Image
           src={Logo}
           height={40}
           width={166}
           alt="Logo"
-          className="sm:ml-[80px] ml-[20px]"
+          className=" ml-[20px]"
         />
-        <a
+        <Link
           href="/Cart"
           className="flex items-center sm:ml-[220px] sm:mr-[100px] w-[120px] h-[44px] px-[18px] py-[11px] gap-[12px] rounded-tl-[8px] bg-white relative z-10 ml-[10px] mr-[10px]"
         >
           <PiShoppingCartBold className="h-[44px] w-[44px]" />
           <p>Cart</p>
           <Image src={No} alt="No Items" height={30} width={30} />
-        </a>
+        </Link>
       </div>
-      <div className="w-full sm:w-[1920px] h-[74px] px-6 sm:px-[300px] py-[14px] flex justify-around items-center">
+      <div className="w-full  h-[74px] px-6 sm:px-[120px] py-[14px] flex justify-between items-center ">
         {/* Navigation Links */}
-        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base gap-0">
+        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base ">
           <a
-            href="/#"
+            href="/"
             className="mr-5 hover:text-slate-400 font-Inter text-[#007580]"
           >
             Home
           </a>
-          <a
+          <Link
             href="/Cart"
             className="mr-5 hover:text-slate-400 font-Inter text-[#636270]"
           >
             Shop
-          </a>
-          <a
+          </Link>
+          <Link
             href="/Product"
             className="mr-5 hover:text-slate-400 font-Inter text-[#636270]"
           >
             Product
-          </a>
-          <a
+          </Link>
+          <Link
             href="/Singlepg"
             className="mr-5 hover:text-slate-400 font-Inter text-[#636270]"
           >
             Pages
-          </a>
-          <a
+          </Link>
+          <Link
             href="/About"
             className="mr-5 hover:text-slate-400 font-Inter text-[#636270]"
           >
             About
-          </a>
+          </Link>
         </nav>
         {/* Contact Info */}
         <a href="/Contact" className="text-black ml-auto hover:text-slate-400">
@@ -69,7 +70,7 @@ const page = () => {
       </div>
       <div className="border-t border-gray-300 w-full"></div>
 
-      <div className="w-full max-w-screen-xl mx-auto mt-16">
+      <div className="w-full max-w-full-xl mx-auto mt-16">
         {/* Your content here */}
         <div>
           <h1 className="text-4xl md:text-5xl text-black text-center font-sans font-bold ">
@@ -183,7 +184,7 @@ const page = () => {
           </div>
         </section>
 
-        <footer className="w-[320px] sm:w-[1920px] sm:mt-[20px] mt-[32px] bg-gray-100 text-gray-600 shadow-lg sm:-ml-96  ">
+        <footer className="w-[320px] sm:w-[1920px] sm:mt-[20px] mt-[32px] bg-gray-100 text-gray-600 shadow-lg sm:-ml-40   ">
           <div className="container mx-auto px-6 py-4">
             <div className="flex flex-wrap md:text-left text-center items-start">
               {/* Logo and Social Links */}
@@ -291,3 +292,4 @@ const page = () => {
 };
 
 export default page;
+
