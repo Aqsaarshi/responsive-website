@@ -24,34 +24,34 @@ const page = () => {
     <div>
       <Header />
       {/* Header Section */}
-      <div className="w-full sm:w-[1920px] h-[84px] px-6 sm:px-[300px] py-[20px] flex justify-center sm:gap-[850px] gap-[20px] bg-[#F0F2F3]">
+      <div className="w-full  h-[84px] px-6 sm:px-[16px] py-[20px] flex justify-center sm:gap-[700px] gap-[20px] bg-[#F0F2F3]">
         <Image
           src={Logo}
           height={40}
           width={166}
           alt="Logo"
-          className="sm:ml-[80px] ml-[20px]"
+          className=" ml-[20px]"
         />
-        <a
+        <Link
           href="/Cart"
           className="flex items-center sm:ml-[220px] sm:mr-[100px] w-[120px] h-[44px] px-[18px] py-[11px] gap-[12px] rounded-tl-[8px] bg-white relative z-10 ml-[10px] mr-[10px]"
         >
           <PiShoppingCartBold className="h-[44px] w-[44px]" />
           <p>Cart</p>
           <Image src={No} alt="No Items" height={30} width={30} />
-        </a>
+        </Link>
       </div>
 
       {/* Navigation Links */}
-      <div className="w-full sm:w-[1920px] h-[74px] px-6 sm:px-[300px] py-[14px] flex justify-around items-center">
+      <div className="w-full  h-[74px] px-6 sm:px-[120px] py-[14px] flex justify-between items-center ">
         {/* Navigation Links */}
-        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base gap-0">
-          <Link
-            href="/#"
+        <nav className="w-full sm:w-[339px] flex flex-wrap items-center text-base ">
+          <a
+            href="/"
             className="mr-5 hover:text-slate-400 font-Inter text-[#007580]"
           >
             Home
-          </Link>
+          </a>
           <Link
             href="/Cart"
             className="mr-5 hover:text-slate-400 font-Inter text-[#636270]"
@@ -78,21 +78,18 @@ const page = () => {
           </Link>
         </nav>
         {/* Contact Info */}
-        <Link
-          href="/Contact"
-          className="text-black ml-auto hover:text-slate-400"
-        >
+        <a href="/Contact" className="text-black ml-auto hover:text-slate-400">
           Contact: (808) 555-0111
-        </Link>
+        </a>
       </div>
 
       <div className="border-t border-gray-300 w-full"></div>
 
       {/* Title */}
-      <h1 className="text-xl font-sans mt-12 ml-8 sm:ml-80 ">Bag</h1>
+      <h1 className="text-xl font-sans mt-12 ml-8 sm:ml-60 ">Bag</h1>
 
       {/* Bag Section */}
-      <div className="w-full max-w-[1920px] h-[632.89px] gap-6 sm:flex sm:flex-col flex-col items-center mt-12 ">
+      <div className="w-full max-w-[1920px] h-[632.89px] gap-6 sm:flex sm:flex-col flex-col items-center mt-12  sm:-ml-[180px]">
         {/* Item 2 (Moved up) */}
         <div className="w-full sm:w-[933px] bg-white rounded-lg shadow-lg mt-6 sm:mt-0 p-4 flex items-center flex-col justify-center">
           <div className="flex items-center w-full justify-between">
@@ -120,7 +117,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="sm:w-[350.67px] sm:h-[295px] sm:left-[1500px] absolute flex flex-col justify-between">
+        <div className="sm:w-[350.67px] sm:h-[295px] sm:left-[1100px] absolute flex flex-col justify-between">
           <span className="text-xl">Summary</span>
 
           {/* Subtotal Section */}
@@ -150,7 +147,7 @@ const page = () => {
 
         {/* Summary (Now positioned to the right side) */}
       </div>
-      <footer className="w-[320px] sm:w-[1920px] sm:mt-[185px] mt-[130px] bg-gray-100 text-gray-600 shadow-lg  ">
+      <footer className="w-[320px] sm:w-[1920px] sm:mt-[185px] mt-[130px] bg-gray-100 text-gray-600 shadow-lg sm:-ml-44 ">
         <div className="container mx-auto px-6 py-4">
           <div className="flex flex-wrap md:text-left text-center items-start">
             {/* Logo and Social Links */}
@@ -253,3 +250,4 @@ const page = () => {
 };
 
 export default page;
+
